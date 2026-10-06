@@ -70,4 +70,4 @@ The device guides the patient through physio-prescribed exercises with live on-d
 
 ## License
 
-*Add a license if you want this open for others to use (MIT is a common default for student/hackathon projects).*
+This project is licensed under the [MIT License](LICENSE).
