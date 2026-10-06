@@ -6,10 +6,7 @@
 
 ## What it does
 
-RehabSense straps two IMU sensors to a patient's thigh and shin to track orthopedic rehab exercises in real time — joint flexion angle, movement speed, and whether the patient is compensating with hip/torso rotation instead of moving the joint correctly (a common mistake that's hard to self-correct without feedback).
-
-The device guides the patient through physio-prescribed exercises with live on-device feedback, counts valid reps, flags faults (hold too short, over the safety limit, moving too fast, incorrect posture), and logs every session — syncing it to the cloud so a clinician can review progress remotely.
-
+A wearable, dual-IMU (MPU6050) joint rehabilitation tracker built on ESP32-S3. It straps sensors to the thigh and shin to track knee flexion, straight leg raise and on the elbow to track elbow flexion exercises in real time — measuring joint angle, movement speed, and detecting incorrect movement patterns with live feedback and cloud monitoring. It guides patients through physio-prescribed exercises with live feedback (OLED display + buzzer cues), supports both Guided and Assessment (silent tracking) modes, logs every session locally, and syncs session data to the cloud webpage over Wi-Fi for a clinician/dashboard view. Also there is option for the physio to look at the exercises in real time with live patient clone movement animation and write feedback on the webpage which will be received by the patient on telegram .
 ## Key features
 
 - **Dual-IMU joint tracking** (MPU6050 × 2, thigh + shin) — computes real joint angle via a complementary filter (gyro integration + accelerometer correction), not just raw sensor readings
